@@ -1,0 +1,207 @@
+/* ---------------------
+    Fonts 
+   --------------------- */
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PT_Sans.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PT_Sans_Bold.ttf");
+    font-weight: bold;
+}
+
+/* ---------------------
+    Common styles
+   --------------------- */
+
+body {
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #272727;
+    background-color: #fff;
+    margin: 0;
+    padding-top: 122px;
+}
+
+.line {
+    width: 80px;
+    margin: 30px auto;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.border {
+    border: 2px solid #ebebeb;
+}
+
+.col_50 {
+    width: 50%;
+}
+
+/* ---------------------
+    Header & Navigation 
+   --------------------- */
+
+.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    position: fixed;
+    padding: 24px 0;
+    background-color: #ebebeb;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    width: 1300px;
+}
+
+.header__logo {
+    float: left;
+}
+
+.logo {
+    display: block;
+    width: 244px;
+    height: 74px;
+    background: url(../img/logo.png) center no-repeat;
+}
+
+.header__nav {
+    float: right;
+}
+
+.nav__link:not(:last-child) {
+    margin-right: 25px;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 23px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #434343;
+}
+
+/* ---------------------
+    Sections
+   --------------------- */
+
+.sect_header {
+    width: 100%;
+    height: 150vh;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sect_header__text {
+    color: #fff;
+    margin: 400px auto 0;
+    font-size: 50pt;
+    font-weight: bold;
+    position: relative;
+}
+
+.sect_title {
+    padding: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.sect_title__text {
+    font-size: 20pt;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.sect_profiles, .sect_study, .sect_subjects {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 65px 0;
+}
+
+.sect_profiles__title, .sect_study__title, .sect_subjects__title {
+    font-size: 35pt;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    margin: 30px auto 40px;
+    font-weight: bold;
+}
+
+.sect_photo {
+    height: 120vh;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+/* ---------------------
+    Tabs 
+   --------------------- */
+
+.tabpanel {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tabpanel__link {
+    display: inline-block;
+    width: calc(25% - 3.75px);
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-decoration: none;
+    vertical-align: top;
+    color: #272727;
+    border: 2px solid #e1e1e1;
+    box-sizing: border-box;
+}
+
+.tabpanel__link:not(:last-child) {
+    margin-right: 5px;
+}
+
+.tabpanel__link_active {
+    color: #fff;
+    background-color: #72c81e;
+    border-color: #72c81e;
+    cursor: default;
+}
+
+.tab {
+    position: relative;
+    display: none;
+    margin-top: -2px;
+    padding: 30px;
+    border: 2px solid #72c81e;
+    min-height: 200px;
+}
+
+.tab_active {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
