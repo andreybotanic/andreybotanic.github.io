@@ -27,6 +27,14 @@ body {
     padding-top: 122px;
 }
 
+p {
+    margin-top: 0;
+}
+
+strong {
+    font-size: 1.1em;
+}
+
 .line {
     width: 80px;
     margin: 30px auto;
@@ -190,9 +198,12 @@ body {
     cursor: default;
 }
 
+.diagramm_text {
+    padding-left: 15px;
+}
+
 .tab {
     position: relative;
-    display: none;
     margin-top: -2px;
     padding: 30px;
     border: 2px solid #72c81e;
@@ -204,4 +215,15 @@ body {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 30px;
+}
+
+.tab_inactive {
+    display: none !important;
+}
+
+.diagramm {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
