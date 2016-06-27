@@ -138,7 +138,7 @@ strong {
     text-align: center;
 }
 
-.sect_profiles, .sect_study, .sect_subjects, .sect_partnership {
+.sect_profiles, .sect_study, .sect_subjects, .sect_partnership, .sect_cost {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -146,7 +146,7 @@ strong {
     -ms-flex-align: center;
     align-items: center;
     background-color: #fff;
-    padding: 20px 65px 0;
+    padding: 20px 65px;
 }
 
 .sect_profiles__title, .sect_study__title, .sect_subjects__title, .sect_partnership__title {
@@ -159,12 +159,77 @@ strong {
 .partnership__text {
     text-align: center;
     font-size: 1.1em;
+    width: 100%;
 }
 
 .sect_photo {
     height: 120vh;
     width: 100%;
     margin: 0 auto 30px;
+}
+
+.sect_cost {
+    background-color: #75c630;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+
+.sect_cost__block {
+    border: 2px solid white;
+    margin: 20px auto;
+    width: 20vw;
+    height: 20vw;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+.cost__title {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.cost__text {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.cost__value {
+    background-color: white;
+    color: #75c630;
+    width: 100%;
+}
+
+.bottom {
+    border-bottom: 1px solid white;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    color: #75c630;
+    font-size: 1.8em;
+    font-weight: bold;    
+}
+
+.sits {
+    margin: 0 30px;
 }
 
 /* ---------------------
@@ -235,13 +300,14 @@ strong {
 
 .flag {
     margin-right: 15px;
-    border: 0.5px solid #888;
 }
 
 .flex_horiz {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
 }
 
 .country_block {
