@@ -138,7 +138,7 @@ strong {
     text-align: center;
 }
 
-.sect_profiles, .sect_study, .sect_subjects {
+.sect_profiles, .sect_study, .sect_subjects, .sect_partnership {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -149,11 +149,16 @@ strong {
     padding: 20px 65px 0;
 }
 
-.sect_profiles__title, .sect_study__title, .sect_subjects__title {
+.sect_profiles__title, .sect_study__title, .sect_subjects__title, .sect_partnership__title {
     font-size: 35pt;
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     margin: 30px auto 40px;
     font-weight: bold;
+}
+
+.partnership__text {
+    text-align: center;
+    font-size: 1.1em;
 }
 
 .sect_photo {
@@ -226,4 +231,21 @@ strong {
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start;
+}
+
+.flag {
+    margin-right: 15px;
+    border: 0.5px solid #888;
+}
+
+.flex_horiz {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.country_block {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 30px;
 }
