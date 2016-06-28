@@ -138,7 +138,7 @@ strong {
     text-align: center;
 }
 
-.sect_profiles, .sect_study, .sect_subjects, .sect_partnership, .sect_cost, .sect_text, .sect_partners {
+.sect_profiles, .sect_study, .sect_subjects, .sect_partnership, .sect_cost, .sect_text, .sect_partners, .sect_reviews {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -337,3 +337,114 @@ strong {
     display: flex;
     margin: 0 30px;
 }
+
+/* ---------------------
+    Reviews 
+   --------------------- */
+
+.reviews__item {
+    padding: 0 11px;
+}
+
+.review {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    padding: 30px 30px 80px;
+    border: 2px solid #ebebeb;
+}
+
+.review__image {
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+}
+
+.review__title {
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.review__short {
+    font-size: .875rem;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid #fff;
+}
+
+.review__button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 400;
+    color: #72c81e;
+    border-color: #72c81e;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    background: 50% no-repeat;
+}
+
+.review__button-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    background-image: url(../img/review__button-icon.png);
+}
+
+.icon:empty:after {
+    visibility: hidden;
+    content: '\00A0';
+}
+
+.review__text {
+    position: absolute;
+    top: -2px;
+    left: 100%;
+    bottom: -2px;
+    z-index: 1;
+    display: none;
+    overflow-y: auto;
+    width: 440px;
+    padding: 30px;
+    font-style: italic;
+    text-align: left;
+    background-color: #e1e1e1;
+}
+
+.review_open {
+    display: block;
+}
+
+.review__text-close {
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin-top: -15px;
+    margin-right: -15px;
+    background-image: url(../img/review__text-close.png);
+    cursor: pointer;
+}
+

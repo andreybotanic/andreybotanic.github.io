@@ -37,4 +37,18 @@ $(document).ready(function(){
         $($(this).attr("href")).addClass("tab_active");
         $($(this).attr("href")).removeClass("tab_inactive");
     });
+    
+    $(".review__button_open").click(function(){
+        if ($(this).next().hasClass("review_open")){
+            $(this).next().removeClass("review_open");
+        }
+        else{
+            $(this).next().addClass("review_open");
+            //$(this).parent().css({"width" : "850px"});
+        }
+    });
+    
+    $(".review__text-close").click(function(){
+        $(this).parent().removeClass("review_open");
+    });
 });
