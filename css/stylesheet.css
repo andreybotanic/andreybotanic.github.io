@@ -56,46 +56,42 @@ strong {
 
 .header {
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     position: fixed;
     padding: 24px 0;
     background-color: #ebebeb;
+    width: 100%;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: .9375rem;
-    padding-right: .9375rem;
-    width: 1300px;
-}
-
-.header__logo {
-    float: left;
+    padding: 0 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .logo {
     display: block;
     width: 244px;
+    min-width: 244px;
     height: 74px;
     background: url(../img/logo.png) center no-repeat;
 }
 
-.header__nav {
-    float: right;
-}
-
-.nav__link:not(:last-child) {
-    margin-right: 25px;
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
 }
 
 .nav__link {
-    display: inline-block;
-    padding: 23px 0;
+    margin: auto;
+    padding: 0 12px;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -138,7 +134,7 @@ strong {
     text-align: center;
 }
 
-.sect_profiles, .sect_study, .sect_subjects, .sect_partnership, .sect_cost, .sect_text, .sect_partners, .sect_reviews {
+.sect_profiles, .sect_study, .sect_works, .sect_subjects, .sect_practice, .sect_partnership, .sect_cost, .sect_text, .sect_partners, .sect_reviews {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -153,10 +149,10 @@ strong {
     border-top: 2px solid #ebebeb;
 }
 
-.sect_profiles__title, .sect_study__title, .sect_subjects__title, .sect_partnership__title, .sect_text__title, .sect_partners__title {
+.sect_profiles__title, .sect_study__title, .sect_works__title, .sect_subjects__title, .sect_practice__title, .sect_partnership__title, .sect_text__title, .sect_partners__title {
     font-size: 35pt;
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
-    margin: 30px auto 40px;
+    margin: 30px auto 20px;
     font-weight: bold;
 }
 
@@ -254,6 +250,11 @@ strong {
     justify-content: space-between;
 }
 
+.sect_buttons {
+    background-color: #66c836;
+    padding: 40px;
+}
+
 /* ---------------------
     Tabs 
    --------------------- */
@@ -277,6 +278,11 @@ strong {
     color: #272727;
     border: 2px solid #e1e1e1;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tabpanel__link:hover {
+    border-color: #bbb;
 }
 
 .tabpanel__link:not(:last-child) {
@@ -288,6 +294,10 @@ strong {
     background-color: #72c81e;
     border-color: #72c81e;
     cursor: default;
+}
+
+.tabpanel__link_active:hover {
+    border-color: #72c81e;
 }
 
 .diagramm_text {
@@ -330,6 +340,11 @@ strong {
     width: 100%;
     -ms-flex-pack: justify;
     justify-content: space-around;
+}
+
+.flex_center {
+    justify-content: center;
+    -ms-flex-pack: center;
 }
 
 .country_block {
@@ -412,6 +427,11 @@ strong {
     height: 22px;
     margin-left: 10px;
     background-image: url(../img/review__button-icon.png);
+}
+
+.button_block {
+    width: 200px;
+    margin: auto 20px;
 }
 
 .icon:empty:after {
